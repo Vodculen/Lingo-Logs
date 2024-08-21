@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcards | Lingo Logs</title>
+    <link rel="stylesheet" href="Global.css">
+</head>
+<body>
+    <nav id="menuNavigationBar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Forums</a></li>
+            <li><a href="">Practice</a></li>
+            <li><a href="">Classes</a></li>
+            <li><a href="">Contribute</a></li>
+            <li><a href="">Donate</a></li>
+            <li><button>Profile</button></li>
+        </ul>
+    </nav>
+
+    <nav id="languagesNavigationBar">
+        <ul id="scrollable">
+            <li><a href="">German</a></li>
+            <li><a href="">French</a></li>
+        </ul>
+    </nav>
+
+    <aside id="chaptersAsideBar">
+        <ul>
+            <li><a href="PracticeHome.html">Practice Home</a></li>
+            <li id="active"><a href="#">German Flashcards</a></li>
+            <li><a href="PracticeGermanReadingHub.html">German Reading</a></li>
+            <li><a href="PracticeGermanListening.html">German Listening</a></li>
+            <li><a href="PracticeGermanWriting.html">German Writing</a></li>
+        </ul>
+    </aside>
+
+    <section id="contentSection">
+        <h1 id="titleText">German Flashcards</h1>
+        <hr id="line">
+
+        <div id="flashcard">
+            <div id="flashcardContent">
+                <h1 id="flashcardHeading">Die Katze</h1>
+                <br>
+                <p id="flashcardText"><b>Die Katze</b> ist sehr schön.</p> 
+            </div>
+    
+            <button id="flipButton">Check Answer</button>
+    
+            <hr id="flashcardLine" style="display: none;">
+            <div id="otherSide" style="display: none;">
+                <div id="otherSideContent">
+                    <h1 id="otherSideHeading">The cat</h1>
+                    <br>
+                    <p id="otherSideText"><b>The cat</b> is very beautiful.</p>
+                    <!-- <textarea name="textbox" id="textbox"></textarea> -->
+                </div>
+                <button id="continueButton">Continue -></button>
+            </div>
+        </div> 
+    </section>
+
+    <script src="Logic/GermanLogic/GermanFlashcardsLogic.js"></script>
+    <script src="Logic.js"></script>
+</body>
+</html>
