@@ -62,7 +62,7 @@ Next, you can follow the style guide down below.
 - **Table ([Table]):** Use this when teaching a lot of stuff that are simmiler and has a lot of conjergations. Like, Pronouns, Tenses, or etc.
 
 ### Answer Sheet
-
+https://github.com/Vodculen/Lingo-Logs/blob/main/Language%20Documentation%20Page%20Syntax.txt
 
 ### Extra Information
 - Please also attatch the .mp3 file under the filepath "Audio/TargetLanguage/NativeLanguage/" and name it "TargetLanguageNativeLanguageUsernameSentance.mp3"
