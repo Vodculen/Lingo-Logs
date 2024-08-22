@@ -1,0 +1,28 @@
+# German Pronouns
+---
+## German Pronouns
+Add discription to this page
+
+## The Pronouns
+Add info about pronouns
+
+- ich {ich}
+- mir {mir}
+- du {do}
+- sie, Sie {zee}
+- es {es}
+- er {air}
+
+[     ][                     "Singular"                        ][                        "Plural"                       ][                       "Formal"                        ][                    "Formal Plural"                    ]
+[ "I" ][ich /Audio/German/English/GermanEnglishVodculenIch.mp3/][wir /Audio/German/English/GermanEnglishVodculenWir.mp3/][                                                       ][                                                       ]
+["You"][ du /Audio/German/English/GermanEnglishVodculenDu.mp3/ ][ihr /Audio/German/English/GermanEnglishVodculenIhr.mp3/][Sie /Audio/German/English/GermanEnglishVodculenSie.mp3/][Sie /Audio/German/English/GermanEnglishVodculenSie.mp3/]
+[ "He"][ er /Audio/German/English/GermanEnglishVodculenEr.mp3/ ][sie /Audio/German/English/GermanEnglishVodculenSie.mp3/][                                                       ][                                                       ]
+["She"][sie /Audio/German/English/GermanEnglishVodculenSie.mp3/][sie /Audio/German/English/GermanEnglishVodculenSie.mp3/][                                                       ][                                                       ]
+[ "It"][ es /Audio/German/English/GermanEnglishVodculenEs.mp3/ ][sie /Audio/German/English/GermanEnglishVodculenSie.mp3/][                                                       ][                                                       ]
+
+---
+## More stuff
+add more stuff
+<Audio/German/English/GermanEnglishVodculenAllPronouns.mp3>
+
+---
