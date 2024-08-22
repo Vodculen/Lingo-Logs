@@ -31,7 +31,7 @@ Finaly, be active and a functioning human is socity and work with others. Since 
 
 ## Needed Resources
 ### General
-- **Discord:** To communicate with the comunity more please install and use Discord. When the server is up this sentance will be repaced with the server id.
+- **Discord:** To communicate with the comunity more please install and use Discord. The sever link is right here https://discord.gg/QTRGmg8H!
 - **GitHub:** I don't know how your reading this without GitHub. But you do need it to contribute really anything for this project.
 
 ### Language Team
