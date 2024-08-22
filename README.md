@@ -65,7 +65,7 @@ Next, you can follow the style guide down below.
 
 
 ### Extra Information
-- Please also attatch the .mp3 file under the filepath "Audio/TargetLanguage/NativeLanguage/" and name it "TargetLanguageNativeLanguageUsername.mp3"
+- Please also attatch the .mp3 file under the filepath "Audio/TargetLanguage/NativeLanguage/Sentance/" and name it "TargetLanguageNativeLanguageUsernameSentance.mp3"
 - Please provide your own audio, if not find others that can.
 - How to use tables:
 
