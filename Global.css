@@ -1,4 +1,4 @@
-/* Global Variables */
+/* Global Styling */
 :root {
     --backgroundColor: #0A0A0B;
     --midgroundColor: #121113;
@@ -14,7 +14,6 @@
 
     --titleFont: 60px arial;
     --sectionFont: 36px arial;
-
     --menuFont: 18px arial;
     --normalFont: 16px arial;
     --flashcardWord: bold 24px arial;
@@ -24,20 +23,24 @@
     --dynamicHeight: calc(100vh - 99px);
 
     overflow: hidden;
-}
-
-/* Global Styles */
-* {
     margin: 0;
     padding: 0;
     font: var(--normalFont);
     color: var(--textColor);
-
 }
 
 
 
-/* Scrollbars */
+/* Font */
+
+@font-face {
+    font-family: consola;
+    src: url(Consolas.woff);
+}
+
+
+
+/* Scrollbar */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -54,12 +57,8 @@
 
 
 
-@font-face {
-    font-family: consola;
-    src: url(Consolas.woff);
-}
-
 /* Menu Navigation Bar */
+
 #menuNavigationBar {
     background: var(--backgroundColor);
     width: 100%;
@@ -177,7 +176,6 @@
 #flashcardLinks {
     list-style: none;
     display: table;
-    /* margin-left: auto; */
     background-color: var(--midgroundColor);
     float: right;
 }
@@ -197,48 +195,7 @@
 
 
 
-/* Common Link Styling */
-
-#menuNavigationBar a:after,
-#languagesNavigationBar a:after,
-#chaptersAsideBar a:after,
-#flashcardLinks a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: var(--textColor);
-    transition: width 0.3s ease, left 0.3s ease;
-    width: 0;
-}
-
-#menuNavigationBar a:hover:after,
-#languagesNavigationBar a:hover:after,
-#chaptersAsideBar a:hover:after,
-#flashcardLinks a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-#active a {
-    color: var(--lightTextColor);
-}
-
-#active a:after {
-    background: var(--lightTextColor);
-}
-
-#active:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-
-
-/* Text and Image Elements */
+/* Page Elements */
 
 #titleText {
     font: var(--titleFont);
@@ -262,10 +219,6 @@
     line-height: 1.3;
 }
 
-
-
-
-
 #image {
     max-width: 100%;
     height: auto;
@@ -273,17 +226,14 @@
 
 
 
-
-
-/* Base Flashcards */
+/* Flashcards */
 
 #flashcardHeading, #otherSideHeading {
     font: var(--flashcardWord);
 }
 
 #flashcardText b, #otherSideText b {
-    font: var(--flashcardWordInSentence);
-    
+    font: var(--flashcardWordInSentence); 
 }
 
 #flashcard, #listening {
@@ -296,9 +246,12 @@
 #flashcardLine {
     border: solid 1px var(--foregroundColor);
     margin: 20px auto;
-
 }
-#flipButton, #continueButton, #incorrectContinueButton, #correctContinueButton {
+
+#flipButton, 
+#continueButton, 
+#correctContinueButton, 
+#incorrectContinueButton  {
     border: none;
     border-radius: 10px;
     padding: 10px 25px;
@@ -307,26 +260,21 @@
     margin-top: 150px;
     margin-right: auto;
 }
-#flipButton:hover, #continueButton:hover {
+
+#flipButton:hover, 
+#continueButton:hover {
     background-color: var(--darkBrandColor);
 }
 
 
-#correctContinueButton {
-    background-color: var(--greenColor);
-}
+#correctContinueButton {background-color: var(--greenColor);}
+#correctContinueButton:hover {background-color: var(--darkGreenColor);}
+#incorrectContinueButton {background-color: var(--redColor);}
+#incorrectContinueButton:hover {background-color: var(--darkRedColor);}
 
-#correctContinueButton:hover {
-    background-color: var(--darkGreenColor);
-}
 
-#incorrectContinueButton {
-    background-color: var(--redColor);
-}
 
-#incorrectContinueButton:hover {
-    background-color: var(--darkRedColor);
-}
+/* Books */
 
 #book {
     background-color: var(--midgroundColor);
@@ -348,21 +296,9 @@
     text-align: center;
 }
 
-#bookTranslatedTextRowOne {
-    color: var(--lightTextColor);
-
-}
-#bookTextRowOne {
-    line-height: 1.3;
-}
-
 #bookLine {
     border: solid 1px var(--foregroundColor);
     margin: 20px auto;
-}
-
-#buttons {
-    margin-top: 50px;
 }
 
 #nextPage, #previousPage, #toggleTranslations, #backToBooks {
@@ -371,12 +307,6 @@
     padding: 10px 25px;
     background-color: var(--brandColor);
     transition: all 0.5s;
-}
-#nextPage, #toggleTranslations {
-    float: right;
-}
-#backToBooks {
-    float: left;
 }
 
 #nextPage:hover, #previousPage:hover, #toggleTranslations:hover, #backToBooks:hover  {
@@ -415,7 +345,15 @@
     color: var(--lightTextColor);
 }
 
+#bookTranslatedTextRowOne {color: var(--lightTextColor);}
+#bookTextRowOne {line-height: 1.3;}
+#buttons {margin-top: 50px;}
+#nextPage, #toggleTranslations {float: right;}
+#backToBooks {float: left;}
 
+
+
+/* Donate */
 
 #donatePadding {
     width: 100%;
@@ -429,10 +367,6 @@
     background-color: var(--midgroundColor);
     padding: 20px;
     border-radius: 15px;
-}
-
-#donateButton {
-    text-align: right;
 }
 
 #donate {
@@ -458,10 +392,6 @@ input[type=text]:focus, input[type=password]:focus {
     border: 2px solid var(--brandColor);
 }
 
-#donate:hover {
-    background-color: var(--darkBrandColor);
-}
-
 #usersInput {
     background-color: var(--foregroundColor);
     outline: none;
@@ -480,6 +410,13 @@ input[type=text]:focus, input[type=password]:focus {
     font: var(--flashcardWord);
 }
 
+#donateButton {text-align: right;}
+#donate:hover {background-color: var(--darkBrandColor);}
+
+
+
+/* Listening  */
+
 #targetSide {
     width: 100%;
     text-align: justify;
@@ -488,9 +425,6 @@ input[type=text]:focus, input[type=password]:focus {
     width: 100%;
     text-align: justify;
 }
-
-
-
 
 .audio-player {
     --player-button-width: 3em;
@@ -589,4 +523,53 @@ input[type=text]:focus, input[type=password]:focus {
     height: var(--sound-button-width);
     cursor: pointer;
     padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Common Link Styling */
+
+#menuNavigationBar a:after,
+#languagesNavigationBar a:after,
+#chaptersAsideBar a:after,
+#flashcardLinks a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--textColor);
+    transition: width 0.3s ease, left 0.3s ease;
+    width: 0;
+}
+
+#menuNavigationBar a:hover:after,
+#languagesNavigationBar a:hover:after,
+#chaptersAsideBar a:hover:after,
+#flashcardLinks a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+#active a {
+    color: var(--lightTextColor);
+}
+
+#active a:after {
+    background: var(--lightTextColor);
+}
+
+#active:hover:after {
+    width: 100%;
+    left: 0;
 }
