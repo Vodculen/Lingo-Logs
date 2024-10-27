@@ -11,7 +11,7 @@ scrollContainer.addEventListener('wheel', (e) => {
 
 function updateHeight() {
     const screenHeight = window.innerHeight;
-    const newHeight = screenHeight - 41;
+    const newHeight = screenHeight - 93;
     document.documentElement.style.setProperty('--dynamic-height', `${newHeight}px`);
 }
 

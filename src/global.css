@@ -13,6 +13,8 @@
     --foreground-color: #1a191c;
     --text-color: #FFFFFF;
     --light-text-color: #BBBBBB;
+    --brand-color: #39ace7;
+    --dark-brand-color: #0784b5;
 
     /* Root Stylization */
 
@@ -24,7 +26,7 @@
 
     
 
-    --dynamic-height: calc(100vh - 41px);
+    --dynamic-height: calc(100vh - 93px);
     --dynamic-width: calc(100vh);
 
 }
@@ -39,6 +41,38 @@
 
 
 
+/* Main Menu */
+
+.main-menu {
+    background: var(--background-color);
+    width: 100%;
+    vertical-align: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: table;
+    margin-left: auto;
+}
+
+.main-menu li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font: var(--basic-font);
+    vertical-align: middle;
+}
+
+
+
+
+
 /* Page Elements */
 
 .title-text {
@@ -48,11 +82,6 @@
 
 .section-text {
     font: var(--section-font);
-    margin: 20px 0 20px 50px;
-}
-
-.subsection-text {
-    font: var(--subsection-font);
     margin: 20px 0 20px 50px;
 }
 
@@ -130,6 +159,10 @@ b {
     height: var(--dynamic-height);
 }
 
+
+
+/* Chapter Sidebar */
+
 .chapters-sidebar::-webkit-scrollbar-thumb { background: var(--foreground-color); }
 
 .chapters-sidebar {
@@ -158,6 +191,8 @@ b {
 
 
 
+/* Content Area */
+
 .content-area {
     overflow-y: auto;
     width: 100%;
@@ -171,15 +206,8 @@ b {
     background-color: var(--background-color);
 }
 
-.splash-screen-title-text {
-    text-align: center;
-    font: var(--title-font);
-}
-.splash-screen-basic-text {
-    text-align: center;
-    font: var(--basic-font);
-    color: var(--light-text-color);
-}
+
+/* Unavailable Page */
 
 .title-text-unavailable {
     font: var(--title-font);
@@ -204,24 +232,11 @@ b {
     color: var(--text-color);
 }
 
-#my-progress {
-    width: 100%;
-    background-color: grey;
-}
-  
-#my-bar {
-    width: 10%;
-    height: 30px;
-    background-color: #04AA6D;
-    text-align: center; /* To center it horizontally (if you want) */
-    line-height: 30px; /* To center it vertically */
-    color: white;
-}
-
 
 
 /* IMPORTANT */
 
+.main-menu a::after,
 .link-unavailable a:after,
 .chapters-sidebar a:after,
 .languages-navbar a:after {
@@ -236,7 +251,7 @@ b {
     transition: width 0.3s ease, left 0.3s ease;
     width: 0;
 }
-
+.main-menu a:hover:after, 
 .content-area:hover:after,
 .link-unavailable a:hover:after,
 .chapters-sidebar a:hover:after,
