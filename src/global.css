@@ -117,6 +117,14 @@ b {
     font-weight: bold;
 }
 
+.word-definition-list {
+    margin: 20px 0 0 50px;
+}
+
+.word-definition-list li {
+    margin: 0 0 20px 0;
+    list-style: none;
+}
 
 
 /* Languages Navigation Bar */
