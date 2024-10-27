@@ -1,0 +1,249 @@
+* {
+    /* Fonts Stylization */
+
+    --basic-font: 18px  Helvetica;
+    --title-font: 60px  Helvetica;
+    --section-font: 36px  Helvetica;   
+    --subsection-font: 24px  Helvetica;   
+
+    /* Colors Stylization */
+
+    --background-color: #0A0A0B;
+    --midground-color: #121113;
+    --foreground-color: #1a191c;
+    --text-color: #FFFFFF;
+    --light-text-color: #BBBBBB;
+
+    /* Root Stylization */
+
+    user-select: none;
+    font: var(--basic-font);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+
+    
+
+    --dynamic-height: calc(100vh - 41px);
+    --dynamic-width: calc(100vh);
+
+}
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #00000000; }
+::-webkit-scrollbar-thumb { background: var(--midground-color); }
+
+
+
+/* Page Elements */
+
+.title-text {
+    font: var(--title-font);
+    text-align: center;
+}
+
+.section-text {
+    font: var(--section-font);
+    margin: 20px 0 20px 50px;
+}
+
+.subsection-text {
+    font: var(--subsection-font);
+    margin: 20px 0 20px 50px;
+}
+
+.basic-text {
+    font: var(--basic-font);
+    margin: 0 0 10px 50px;
+    line-height: 1.3;
+}
+
+.content-list-item {
+    font: var(--basic-font);
+    margin: 0 0 10px 50px;
+    line-height: 1.3;
+}
+
+.line {
+    border: solid 1px var(--foreground-color);
+    margin: 0 auto;
+}
+
+.spacer {
+    height: 40px;
+}
+
+.picture {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 0 0 10px 50px;
+}
+
+b {
+    font-weight: bold;
+}
+
+
+
+/* Languages Navigation Bar */
+
+.languages-navbar {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; 
+    background-color: var(--foreground-color);
+}
+
+.languages-navbar::-webkit-scrollbar { display: none; }
+
+.languages-navbar ul {
+    display: inline-flex;
+}
+
+.languages-navbar li {
+    list-style: none;
+    padding: 10px;
+}
+
+.languages-navbar a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font: var(--basic-font);
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+}
+
+
+
+/* Page */
+
+.page {
+    display: flex;
+    width: 100%;
+    height: var(--dynamic-height);
+}
+
+.chapters-sidebar::-webkit-scrollbar-thumb { background: var(--foreground-color); }
+
+.chapters-sidebar {
+    width: 350px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--midground-color);
+}
+
+.chapters-sidebar ul {
+    display: inline-flex;
+}
+
+.chapters-sidebar li {
+    list-style: none;
+    padding: 20px 0 0 30px;
+}
+
+.chapters-sidebar a {
+    text-decoration: none;
+    font: var(--basic-font);
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+}
+
+
+
+.content-area {
+    overflow-y: auto;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 0 1.5%;
+}
+
+.page-unavailable {
+    width: 100%;
+    height: var(--dynamic-width);
+    background-color: var(--background-color);
+}
+
+.splash-screen-title-text {
+    text-align: center;
+    font: var(--title-font);
+}
+.splash-screen-basic-text {
+    text-align: center;
+    font: var(--basic-font);
+    color: var(--light-text-color);
+}
+
+.title-text-unavailable {
+    font: var(--title-font);
+    padding: 20px 0 10px 50px;
+}
+
+.basic-text-unavailable {
+    font: var(--basic-font);
+    padding: 0 0 20px 50px;
+}
+
+.link-unavailable {
+    padding: 0 50px;
+    list-style: none;
+}
+
+.link-unavailable a {
+    text-decoration: none;
+    font: var(--basic-font);
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+}
+
+#my-progress {
+    width: 100%;
+    background-color: grey;
+}
+  
+#my-bar {
+    width: 10%;
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+}
+
+
+
+/* IMPORTANT */
+
+.link-unavailable a:after,
+.chapters-sidebar a:after,
+.languages-navbar a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--text-color);
+    transition: width 0.3s ease, left 0.3s ease;
+    width: 0;
+}
+
+.content-area:hover:after,
+.link-unavailable a:hover:after,
+.chapters-sidebar a:hover:after,
+.languages-navbar a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.active a {color: var(--light-text-color);}
+.active a:after {background: var(--light-text-color);} 
