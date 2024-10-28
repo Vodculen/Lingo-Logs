@@ -4,6 +4,7 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: 'src/assets/icons/Logo'
   },
   publishers: [
     {
@@ -21,19 +22,19 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
-      // Windows download
-      name: '@electron-forge/maker-squirrel',
-      config: {
-        target: 'nsis',
-        arch: ['x64', 'ia32'],
-      },
-    },
-    {
       // MacOS download
       name: '@electron-forge/maker-dmg',
       config: {
-        target: 'dmg',
-        arch: ['x64'],
+        background: './assets/help-one.png',
+        format: 'ULFO'
+      }
+    },
+    {
+      // Windows download
+      name: '@electron-forge/maker-squirrel',
+      config: {
+        certificateFile: './cert.pfx',
+        certificatePassword: process.env.CERTIFICATE_PASSWORD
       }
     },
     {
@@ -42,6 +43,9 @@ module.exports = {
       config: {
         target: 'deb',
         arch: ['x64', 'arm64'],
+        options: {
+          icon: 'src/assets/icons/Logo.png'
+        }
       },
     },
     {
