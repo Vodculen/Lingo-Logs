@@ -68,6 +68,7 @@ https://github.com/Vodculen/Lingo-Logs/blob/main/Language%20Documentation%20Page
 - Please also attach the .mp3 file under the filepath "Audio/TargetLanguage/NativeLanguage/" and name it "TargetLanguageNativeLanguageUsernameSentence.mp3"
 - Please provide your own audio, if not find others that can.
 - How to use tables:
+- **INPORTANT:** You will need to install: npm install electron --save-dev, npm install --save-dev @electron-forge/cli, npx electron-forge import, npm install --save-dev @electron-forge/publisher-github.
 
 ## Members
 **Lead Developer:** Vodculen
