@@ -91,6 +91,15 @@
     line-height: 1.3;
 }
 
+
+
+.basic-text-light {
+    font: var(--basic-font);
+    color: var(--light-text-color);
+    margin: 0 0 10px 50px;
+    line-height: 1.3;
+}
+
 .content-list-item {
     font: var(--basic-font);
     margin: 0 0 10px 50px;
@@ -124,6 +133,36 @@ b {
 .word-definition-list li {
     margin: 0 0 20px 0;
     list-style: none;
+    display: inline;
+}
+
+.text-light {
+    font: var(--basic-font);
+    color: var(--light-text-color);
+    line-height: 1.3;
+}
+
+.word-definition-table {
+    font: var(--basic-font);
+    margin: 0 0 10px 50px;
+    line-height: 1.3;
+}
+
+.word-definition-table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.word-definition-table th {
+    padding: 5px 10px;
+}
+
+.word-definition-table .title-box {
+    background-color: var(--foreground-color);
+}
+
+.word-definition-table .content-box {
+    background-color: var(--midground-color);
 }
 
 
